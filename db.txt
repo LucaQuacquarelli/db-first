@@ -1,0 +1,19 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+targa - stringa - VARCHAR(8) - PRIMARY KEY 
+modello - stringa - VARCHAR(20) - DEFAULT('Unknown')
+casa_produttrice - stringa - VARCHAR(20) - NOTNULL
+anno_di_immatricolazione - data - YEAR - NOTNULL
+provenienza - stringa - VARCHAR(5) - NOTNULL
+cilindrata - intero - SMALLINT - NOTNULL
+alimentazione - stringa - VARCHAR(50) - NOTNULL
+carrozzeria - stringa - VARCHAR(50) - NULL
+colore - stringa - VARCHAR(25)  - NOTNULL
+tipo_cambio - stringa - VARCHAR(15)  - NULL
+cv - intero - TINYINT  - NULL
+consumo - stringa - VARCHAR(8)  - NULL
+optional - stringa - TEXT  - NULL
+proprietari_precedenti - intero - TINYINT  - DEFAULT(1)
+condizioni_veicolo - stringa - VARCHAR(20)  - NOTNULL
+descrizione - stringa - TEXT - NOTNULL
+prezzo - intero - FLOAT(8,2) - NOTNULL
